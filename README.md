@@ -109,3 +109,5 @@ Visit the Ngrok Dashboard >> Open the Menu "Endpoints" click the Url
 ```
 https://dashboard.ngrok.com/endpoints
 ```
+### 4. Finish the Installation
+After running the image, navigate to http://127.0.0.1/install.php or https://{host_providec_by_ngrok}/install.php⁠ to complete the bWAPP setup process.
