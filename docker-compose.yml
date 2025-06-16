@@ -1,0 +1,17 @@
+services:
+  bwapp:
+    image: raesene/bwapp:latest
+    container_name: bwapp
+    ports:
+      - "80:80"
+    restart: unless-stopped
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: ngrok
+    restart: unless-stopped
+    depends_on:
+      - bwapp
+    environment:
+      NGROK_AUTHTOKEN: {YOUR_NGROK_TOKEN}
+    command: http bwapp:80
