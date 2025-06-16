@@ -31,8 +31,6 @@ You can explore the Docker images used in this setup:
 Create a file named `docker-compose.yml` with the following content:
 
 ```yaml
-version: "3.8"
-
 services:
   bwapp:
     image: raesene/bwapp:latest
@@ -79,8 +77,6 @@ HTTP Requests
 Create a file named `docker-compose.yml` with the following content:
 
 ```yaml
-version: '3.8'
-
 services:
   bwapp:
     image: raesene/bwapp:latest
